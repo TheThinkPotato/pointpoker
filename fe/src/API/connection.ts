@@ -1,7 +1,7 @@
 import * as signalR from "@microsoft/signalr";
 
 export const webSocketConnection = new signalR.HubConnectionBuilder()
-  .withUrl("http://localhost:5051/packethub", {
+  .withUrl("http://10.1.1.80:5051/packethub", {
     transport: signalR.HttpTransportType.WebSockets,
     withCredentials: true, // CORS support
   })
